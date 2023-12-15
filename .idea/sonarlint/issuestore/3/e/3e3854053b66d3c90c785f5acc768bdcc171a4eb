@@ -1,0 +1,10 @@
+
+v	java:S116"URename this field "BOARD_LIST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­øü›ûÿÿÿÿ8ÛŠ…çÆ1
+C
+java:S1170"!Make this final field static too.(­øü›ûÿÿÿÿ8İŠ…çÆ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞŠ…çÆ1
+]	java:S125"<This block of commented-out lines of code should be removed.(Æ†Àûÿÿÿÿ8çŠ…çÆ1
+]	java:S125"<This block of commented-out lines of code should be removed.(Ãª±õşÿÿÿÿ8èŠ…çÆ1
+P
+java:S1068".Remove this unused "BOARD_LIST" private field.(­øü›ûÿÿÿÿ8ìŠ…çÆ1
