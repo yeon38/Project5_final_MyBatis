@@ -1,35 +1,21 @@
 package com.example.board;
 
 public class BoardVO {
-
-    private int seq;
+    private int id;
     private String title;
-    private String writer;
-    private String content;
+    private String city;
+    private String operatingHours;
+    private String detail;
+    private String address;
     private String category;
+    private String rating;
 
-    public String getCategory() {
-        return category;
+    public int getId() {
+        return id;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public int getSeq() {
-        return seq;
-    }
-
-    public void setSeq(int seq) {
-        this.seq = seq;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -40,11 +26,61 @@ public class BoardVO {
         this.title = title;
     }
 
-    public String getWriter() {
-        return writer;
+    public String getCity() {
+        return city;
     }
 
-    public void setWriter(String writer) {
-        this.writer = writer;
+    public void setCity(String city) {
+        this.city = city;
     }
+
+    public String getOperatingHours() {
+        return operatingHours;
+    }
+
+    public void setOperatingHours(String operatingHours) {
+        this.operatingHours = operatingHours;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
+    }
+
+    public String getFee() {
+        return fee;
+    }
+
+    public void setFee(String fee) {
+        this.fee = fee;
+    }
+
+    private String fee;
 }

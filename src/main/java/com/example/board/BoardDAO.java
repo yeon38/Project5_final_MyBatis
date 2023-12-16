@@ -12,17 +12,32 @@ public class BoardDAO {
     @Autowired
     SqlSession sqlSession;
 
-    private final String BOARD_LIST = "select * from BOARD order by seq desc";
+    private final String BOARD_LIST = "select * from pp5BOARD order by seq desc";
 
     public List<BoardVO> getBoardList() {
         List<BoardVO> list = sqlSession.selectList("Board.getBoardList");
         return list;
     }
 
-//    public void insertBoard (BoardVO vo) {
-//        System.out.println ("insert board");
-//        mybatis.insert.("BoardDAO.insertBoard", vo);
-//    }
+    public BoardVO getBoard(int id) {
+        BoardVO one = sqlSession.selectOne("Board.getBoard", id);
+        return one;
+    }
+
+    public int insertBoard(BoardVO vo) {
+        int result = sqlSession.insert("Board.insertBoard", vo);
+        return result;
+    }
+
+    public int updateBoard(BoardVO vo) {
+        int one = sqlSession.update("Board.updateBoard", vo);
+        return one;
+    }
+
+    public int deleteBoard(int id) {
+        int result = sqlSession.delete("Board.deleteBoard", id);
+        return result;
+    }
 
 //    public List<BoardVO> getBoardList(){
 //        String sql = "select * from BOARD order by seq desc";

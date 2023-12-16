@@ -3,33 +3,26 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Board">
 
-    <!--    <insert id="boardInsert">-->
-    <!--        insert into BOARD (category, title, writer, content) values-->
-    <!--        (#{category} , #{title} , #{writer} , #{content})-->
-    <!--    </insert>-->
-
-    <!--    <update id="boardUpdate">-->
-    <!--        update BOARD-->
-    <!--        set title=#{title}, content=#{content}, writer=#{writer}, category=#{category} where seq=#{seq}-->
-    <!--    </update>-->
-
-    <!--    <delete id="boardDelete">-->
-    <!--        delete from BOARD where seq=#{seq}-->
-    <!--    </delete>-->
-
-    <!--    <select id="boardSelect" resultType="board">-->
-    <!--        select * from BOARD where seq=#{seq}-->
-    <!--    </select>-->
-
-    <!--    <select id="boardSelect" resultType="board">-->
-    <!--        <![CDATA[-->
-    <!--        SELECT * FROM BOARD-->
-    <!--        WHERE SEQ < #{seq}-->
-    <!--    ]]>-->
-    <!--    </select>-->
-
     <select id="getBoardList" resultType="board">
-        select * from BOARD order by seq desc
+        select * from pp5BOARD order by id desc
     </select>
+    <select id="getBoard" resultType="board">
+        select * from pp5BOARD where id = #{id}
+    </select>
+
+    <insert id="insertBoard">
+        insert into pp5BOARD (id, title, city, operatingHours, detail, address, category, rating, fee) values (#{id},
+        #{title}, #{city},
+        #{operatingHours}, #{detail}, #{address}, #{category}, #{rating}, #{fee})
+    </insert>
+
+    <update id="updateBoard">
+        update pp5BOARD set title=#{title}, city=#{city}, operatingHours=#{operatingHours}, detail=#{detail},
+        address=#{address}, rating=#{rating}, fee=#{fee}, category=#{category} where id=#{id}
+    </update>
+
+    <delete id="deleteBoard">
+        delete from pp5BOARD where id=#{id}
+    </delete>
 
 </mapper>

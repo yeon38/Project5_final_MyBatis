@@ -1,6 +1,21 @@
 
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ
-Q	java:S125"<This block of commented-out lines of code should be removed.(‡ä™
-t
-java:S1128"RRemove this unused import 'org.springframework.web.bind.annotation.RequestMethod'.(Ê™Ðÿûÿÿÿÿ8¿Õ÷æÆ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ïÿœìÆ1
+j
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(²ûñãÿÿÿÿÿ8úÿœìÆ1
+j
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(€¡½•ûÿÿÿÿ8€€ìÆ1
+g
+java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(Ó¥›Á8ûÿœìÆ1
+G	java:S106#"+Replace this use of System.out by a logger.(È‰æé8ýÿœìÆ1
+G	java:S106%"+Replace this use of System.out by a logger.(ÎÃ8þÿœìÆ1
+j
+java:S4488*"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(»šì¦üÿÿÿÿ8ˆ€ìÆ1
+l
+java:S44881"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(÷ÁÓùÿÿÿÿ8ƒ€ìÆ1
+L	java:S1065"+Replace this use of System.out by a logger.(‹©ÞÁþÿÿÿÿ8†€ìÆ1
+L	java:S1067"+Replace this use of System.out by a logger.(®”Ä¢üÿÿÿÿ8‡€ìÆ1
+e
+java:S4488;"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(ó†È³8”Í×ˆÇ1
+L	java:S106?"+Replace this use of System.out by a logger.(…¿Âþÿÿÿÿ8Š€ìÆ1
+L	java:S106A"+Replace this use of System.out by a logger.(¶Õ‡þÿÿÿÿ8Š€ìÆ1

@@ -13,22 +13,22 @@ public class BoardServiceImp implements BoardService{
 
     @Override
     public int insertBoard(BoardVO vo) {
-        return 0;
+        return boardDAO.insertBoard(vo);
     }
 
     @Override
-    public int deleteBoard(int seq) {
-        return 0;
+    public int deleteBoard(int id) {
+        return boardDAO.deleteBoard(id);
     }
 
     @Override
     public int updateBoard(BoardVO vo) {
-        return 0;
+        return boardDAO.updateBoard(vo);
     }
 
     @Override
-    public BoardVO getBoard(int seq) {
-        return null;
+    public BoardVO getBoard(int id) {
+        return boardDAO.getBoard(id);
     }
 
     @Override
