@@ -66,28 +66,43 @@
         }
 
     </style>
+
+    <script>
+        function delete_ok(id) {
+            var a = confirm("정말로 삭제하겠습니까?");
+            if (a) location.href = 'deleteok/' + id;
+        }
+    </script>
 </head>
 <body>
 
 <table>
     <tr>
         <th>No.</th>
-        <th>Title</th>
-        <th>Writer</th>
-        <th>Content</th>
+        <th>Name</th>
+        <th>Region</th>
+        <th>detail</th>
         <th>Category</th>
+        <th>Address</th>
+        <th>Rating</th>
+        <th>Usage Fee</th>
+        <th>Operating Hour</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
     <c:forEach items="${list}" var="u">
         <tr>
-            <td>${u.getSeq()}</td>
+            <td>${u.getId()}</td>
             <td>${u.getTitle()}</td>
-            <td>${u.getWriter()}</td>
-            <td>${u.getContent()}</td>
+            <td>${u.getCity()}</td>
+            <td>${u.getDetail()}</td>
             <td>${u.getCategory()}</td>
-            <td><a href="editform/${u.seq}">Edit</a></td>
-            <td><a href="deleteok/${u.seq}">delete</a></td>
+            <td>${u.getAddress()}</td>
+            <td>${u.getRating()}</td>
+            <td>${u.getFee()}</td>
+            <td>${u.getOperatingHours()}</td>
+            <td><a href="editform/${u.id}">Edit</a></td>
+            <td><a href="javascript:delete_ok('${u.id}')">delete</a></td>
         </tr>
     </c:forEach>
 </table>

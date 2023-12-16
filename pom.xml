@@ -39,11 +39,19 @@
       <version>8.0.23</version> <!-- MySQL 버전에 따라 버전을 조절하세요. -->
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework</groupId>-->
+<!--      <artifactId>spring-jdbc</artifactId>-->
+<!--      <version>5.3.23</version>-->
+<!--    </dependency>-->
+
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-jdbc</artifactId>
-      <version>5.3.23</version>
+      <version>4.2.4.RELEASE</version>
     </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
     <dependency>
       <groupId>org.mybatis</groupId>

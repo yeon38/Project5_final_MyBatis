@@ -50,11 +50,15 @@
 
 <%--@elvariable id="boardVO" type=""--%>
 <form:form modelAttribute="boardVO" method="post" action="../editok">
-    <form:hidden path="seq"/>
+    <form:hidden path="id"/>
     <table id="edit">
-        <tr><td>title</td><td><form:input path="title"/></td></tr>
-        <tr><td>writer</td><td><form:input path="writer"/></td></tr>
-        <tr><td>content</td><td><form:input path="content"/></td></tr>
+        <tr><td>Title</td><td><form:input path="title"/></td></tr>
+        <tr><td>Region</td><td><form:input path="city"/></td></tr>
+        <tr><td>Operating Hour</td><td><form:input path="operatingHours"/></td></tr>
+        <tr><td>Detail</td><td><form:input path="detail"/></td></tr>
+        <tr><td>Address</td><td><form:input path="address"/></td></tr>
+        <tr><td>Rating</td><td><form:input path="rating"/></td></tr>
+        <tr><td>Fee</td><td><form:input path="fee"/></td></tr>
         <tr><td>category</td><td><form:input path="category"/></td></tr>
     </table>
     <input type="submit" class="postlink" value="edit">

@@ -1,0 +1,15 @@
+
+c
+java:S1192"FDefine a constant instead of duplicating this literal "login" 4 times.(Íý‡Ç8šÑàˆÇ1
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8·ÑàˆÇ1
+j
+java:S4488"HReplace "@RequestMapping(method = RequestMethod.GET)" with "@GetMapping"(¦áù×ûÿÿÿÿ8¼ÑàˆÇ1
+g
+java:S4488"JReplace "@RequestMapping(method = RequestMethod.POST)" with "@PostMapping"(ùžËŽ8ÁÑàˆÇ1
+G	java:S106"+Replace this use of System.out by a logger.(¼åõ³8ÄÑàˆÇ1
+^
+java:S2441 "<Make "UserVO" serializable or don't store it in the session.(–Ö¢²ûÿÿÿÿ8ÅÑàˆÇ1
+L	java:S106#"+Replace this use of System.out by a logger.(®Ç§ûÿÿÿÿ8ÆÑàˆÇ1
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(µ¡øÏýÿÿÿÿ8ÉÑàˆÇ1
