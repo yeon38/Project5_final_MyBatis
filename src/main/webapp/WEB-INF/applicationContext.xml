@@ -6,9 +6,9 @@
     <!-- Root Context: defines shared resources visible to all other web components -->
     <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://walab.handong.edu:3306/p233_22200565"/>
-        <property name="username" value="p233_22200565"/>
-        <property name="password" value="Zae0ah"/>
+        <property name="url" value="jdbc:mysql://walab.handong.edu:3306/p233_22200598"/>
+        <property name="username" value="p233_22200598"/>
+        <property name="password" value="ru6aeL"/>
     </bean>
 
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
