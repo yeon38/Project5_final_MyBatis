@@ -10,48 +10,61 @@
 <head>
     <title>Title</title>
 
-    <style>
-        #edit {
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 80%;
-            max-width: 600px;
-        }
+    <style>/* 전체 폼 컨테이너 */
+    .form-container {
+        margin: 50px auto;
+        width: 400px;
+        text-align: center;
+    }
 
-        #edit input[type="text"] {
-            width: calc(100% - 10px);
-            margin: 5px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
-        }
+    /* 테이블 스타일 */
+    #edit {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
 
-        #edit button {
-            margin: 10px 5px;
-            padding: 8px 16px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
+    #edit td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
 
-        #edit button:nth-of-type(1) {
-            background-color: #f44336;
-            color: white;
-        }
+    /* 버튼 스타일 */
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
 
-        #edit button:nth-of-type(2) {
-            background-color: #4CAF50;
-            color: white;
-        }
+    /* View List */
+    .view-list-btn {
+        background-color: #ff8c00;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
 
+    .view-list-btn:hover {
+        background-color: #ffA500;
+    }
+
+    /* Submit */
+    .submit-btn {
+        background: linear-gradient(to right, #ff8c00, #ffa500);
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+        background: linear-gradient(to right, #ffA500, #ff8c00);
+    }
     </style>
 </head>
 <body>
 
-<form action="addok" method="post">
+<form action="addok" method="post" class="form-container">
     <table id="edit">
         <tr><td>Title</td><td><input type="text" name="title"/></td></tr>
         <tr><td>Region</td><td><input type="text" name="city"/></td></tr>
@@ -62,8 +75,8 @@
         <tr><td>Fee</td><td><input type="text" name="fee"></td></tr>
         <tr><td>Category</td><td><input type="text" name="category"/></td></tr>
     </table>
-    <button type="button" onclick="location.href='list'">view list</button>
-    <button type="submit">submit</button>
+    <button type="button" onclick="location.href='list'" class="view-list-btn">View List</button>
+    <button type="submit" class="submit-btn">Submit</button>
 </form>
 
 </body>

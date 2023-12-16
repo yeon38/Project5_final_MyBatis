@@ -11,39 +11,57 @@
 <head>
     <title>edit form</title>
 
-    <style>
-        #edit {
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            width: 80%;
-            max-width: 600px;
-        }
+    <style>/* 전체 폼 컨테이너 */
+    .form-container {
+        margin: 50px auto;
+        width: 400px;
+        text-align: center;
+    }
 
-        #edit input[type="text"],
-        #edit input[type="submit"],
-        #edit input[type="button"] {
-            width: calc(100% - 10px);
-            margin: 5px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            box-sizing: border-box;
-        }
+    /* 테이블 스타일 */
+    #edit {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
 
-        #edit input[type="submit"],
-        #edit input[type="button"] {
-            background-color: #4CAF50;
-            color: white;
-            cursor: pointer;
-        }
+    #edit td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
 
-        #edit input[type="button"] {
-            background-color: #f44336;
-        }
+    /* 버튼 스타일 */
+    input[type="submit"],
+    input[type="button"] {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
 
 
+    input[type="submit"].postlink {
+        background-color: #ff8c00;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"].postlink:hover {
+        background-color: #ffA500;
+    }
+
+
+    input[type="button"].postlink {
+        background: linear-gradient(to right, #ff8c00, #ffa500);
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="button"].postlink:hover {
+        background: linear-gradient(to right, #ffA500, #ff8c00);
+    }
     </style>
 </head>
 <body>

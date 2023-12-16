@@ -11,68 +11,89 @@
 <head>
     <title>board list</title>
 
-<%--    <script>--%>
-<%--        function delete_ok(id) {--%>
-<%--            var a = comfirm("정말 삭제하시겠습니까?");--%>
-<%--            if (a) location.href='deleteok/' + id;--%>
-<%--        }--%>
-<%--    </script>--%>
-
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        th {
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        th, td {
-            font-family: sans-serif;
-            font-size: 14px;
-            font-weight: normal;
-        }
-
-        td.content {
-            max-height: 70px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        button[type="button"] {
-            padding: 12px 20px;
-            font-size: 16px;
-            background-color: #04AA6D;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button[type="button"]:hover {
-            background-color: #04AA6D;
-        }
-
-    </style>
-
     <script>
         function delete_ok(id) {
             var a = confirm("정말로 삭제하겠습니까?");
             if (a) location.href = 'deleteok/' + id;
         }
     </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ff8c00;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ffa500;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+        }
+
+        a[href^="editform"] {
+            background-color: #9fd687;
+            color: white;
+            margin-right: 5px;
+        }
+
+        a[href^="editform"]:hover {
+            background-color: #80a86f;
+        }
+
+        a[href^="javascript:delete_ok"] {
+            background-color: #f29494;
+            color: white;
+        }
+
+        a[href^="javascript:delete_ok"]:hover {
+            background-color: #d18282;
+        }
+
+    </style>
+
 </head>
 <body>
 
